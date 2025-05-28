@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+/*
+  ---break---
+*/
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-primary: var(--color-neutral-800);
+  --color-secondary: var(--color-neutral-500);
+
+  --shadow-ace:
+    0px 4px 16px rgba(17, 17, 26, 0.1), 0px 8px 24px rgba(17, 17, 26, 0.1),
+    0px 16px 56px rgba(17, 17, 26, 0.1);
+}
+
+.dark {
+  --color-primary: var(--color-neutral-100);
+  --color-secondary: var(--color-neutral-400);
+}
